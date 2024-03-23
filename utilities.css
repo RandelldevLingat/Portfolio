@@ -1,0 +1,156 @@
+:root {
+    --rose-color: rgb(225 29 72);
+    --slate-600: rgb(71 85 105);
+    --slate-100: white;
+    --black-color: #1e1e1e;
+    --background-color: rgb(241 245 249);
+    --color-gray: rgb(71 85 105);
+  }
+
+.projects-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15em;
+    margin: 3em 2em;
+}
+.featured-context{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-text{
+    max-width: 50ch;
+}
+
+.ul-container{
+    display: flex;
+    gap: 2em;
+    
+}
+.ul-container ul{
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+.ul-container ul li{
+    margin: 0em 0;
+}
+
+.list-order{
+    max-width: 1400px;
+    white-space: nowrap; /*Prevents the text to wrap when the screen size gets smaller*/
+}
+.featured h3{
+    color: var(--rose-color);
+}
+
+.grid-projects{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    place-items: center;
+}
+
+.image-project{
+    height: 400px;
+    width: 700px;
+    position: relative;
+  
+}
+
+.image-project img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.image-project::after{
+    content: "";
+    background-color: rgba(244, 63, 94, 0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all .3s;
+}
+
+.image-project:hover::after{
+    background-color: rgba(80, 80, 980, 0.1);
+}
+
+
+/* Small Screen Size */
+@media(min-width:475px){
+    .featured-title{
+        font-size: 3em;
+    }
+    .featured-text{
+        font-size: 14px;
+    }
+    .list-title{
+        font-size: 3em;
+    }
+
+    .projects-section{
+        display: block;
+    }
+    .ul-container{
+        display: block;
+    }
+
+    .ul-container ul{
+        font-size: 15px;
+    }
+
+}
+@media(min-width:600px){
+    .ul-container{
+        display: flex;
+    }
+}
+/* Large Screen SIze */
+@media (min-width: 1024px) {
+    .featured-title{
+        font-size: 3.4em;
+    }
+    .featured-text{
+        font-size: 16px;
+    }
+    .list-title{
+        font-size: 3.4em;
+    }
+    .projects-section{
+        display: flex;
+    }
+    
+    .ul-container ul{
+        font-size: 17px;
+    }
+}
+
+/* Extra Large Screen Size */
+@media(min-width:1280px){
+    .featured-title{
+        font-size: 3.7em;
+    }
+
+    .featured-text{
+        font-size: 19px;
+    }
+
+    .list-title{
+        font-size: 3.7em;
+    }
+   
+    .ul-container ul{
+        font-size: 19px;
+    }
+}
