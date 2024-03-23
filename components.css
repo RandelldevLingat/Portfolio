@@ -1,0 +1,354 @@
+/* Second Section  */
+:root {
+    --rose-color: rgb(225 29 72);
+    --slate-600: rgb(71 85 105);
+    --slate-100: white;
+    --black-color: #1e1e1e;
+    --background-color: rgb(241 245 249);
+    --color-gray: rgb(71 85 105);
+  }
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 10em 0;
+  }
+  .horizontal-line {
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+  
+  .about-me {
+    display: flex;
+    flex-direction: column; /*This one is necessary because when it is on the small screen the image will be in column*/
+    margin: 0rem 1rem;
+  }
+
+  span{
+    color:var(--rose-color);
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about__text {
+    max-width: 50ch;
+    margin: 1rem 0;
+  }
+  .about-image {
+    height: 450px;
+    width: 450px;
+    aspect-ratio: 15/8;
+    margin: 3em 0;
+  }
+  .about-image img {
+    height: 100%;
+    width: 100%;
+  }
+  /* GRID IMAGES */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 130px));
+    max-width: 440px;
+    gap: 2em;
+    margin: 0 1rem;
+  }
+  .items-title h3 {
+    width: 100%;
+    font-size: 14.5px;
+    margin: 0 auto;
+  }
+  
+  .language-container {
+    height: 100px;
+    width: 100px;
+    border: 2px solid gray;
+  }
+  
+  .language-container .skill-name {
+    display: flex;
+    justify-content: center; /*TO center the names of the skills*/
+    font-size: 13px;
+  }
+  
+  .language-container img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @media (min-width: 350px) {
+    .about-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+  
+    .about-me {
+      display: flex;
+      flex-direction: column; /*This one is necessary because when it is on the small screen the image will be in column*/
+    }
+    .about-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .about-context h2 {
+      font-size: 1em;
+    }
+  
+    .about__text {
+      max-width: 50ch;
+      margin: 0.7rem 0;
+      font-size: 1rem;
+    }
+    .about-image {
+      height: 300px;
+      width: 300px;
+      aspect-ratio: 15/8;
+      margin: 3em 0;
+      display: flex;
+      margin: 2rem auto; /*To center the image with different break points*/
+    }
+    .about-image img {
+      height: 100%;
+      width: 100%;
+    }
+    /* GRID IMAGES */
+    .flex-center {
+      display: flex; /*This one centers the whole Technologies*/
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .skills-grid {
+      display: grid;
+      /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 100vw;
+      gap: 2em;
+      margin: 0 auto;
+      place-items: center; /*tHIS ONE CENTER ALL THE GRID IMAGES IN THE CONTAINER THEY ARE IN*/
+    }
+    .items-title h3 {
+      width: 20em; /*This one is necessary because we need a width for use to set it center*/
+      font-size: 2em;
+      text-align: center; /*Thsi one center the title*/
+    }
+    .language-container {
+      border: 2px solid gray;
+      border-radius: 100vw;
+    }
+  
+    .language-container .skill-name {
+      display: flex;
+      justify-content: center; /*TO center the names of the skills*/
+      font-size: 13px;
+    }
+  
+    .language-container img {
+      border-radius: 100vw;
+    }
+  }
+  
+  @media (min-width: 475px) {
+    .about-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+  
+    .about-me {
+      display: flex;
+      flex-direction: column; /*This one is necessary because when it is on the small screen the image will be in column*/
+    }
+    .about-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .about-context h2 {
+      font-size: 3.2em;
+    }
+  
+    .about__text {
+      max-width: 50ch;
+      margin: 0.7rem 0;
+      font-size: 1rem;
+    }
+    .about-image {
+      height: 400px;
+      width: 400px;
+      margin: 3em 0;
+      display: flex;
+      margin: 2rem auto; /*To center the image with different break points*/
+    }
+    .about-image img {
+      height: 100%;
+      width: 100%;
+    }
+    /* GRID IMAGES */
+    .flex-center {
+      display: flex; /*This one centers the whole Technologies*/
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .skills-grid {
+      display: grid;
+      /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 100vw;
+      gap: 2em;
+      margin: 2rem auto;
+      place-items: center; /*tHIS ONE CENTER ALL THE GRID IMAGES IN THE CONTAINER THEY ARE IN*/
+    }
+    .items-title h3 {
+      width: 20em; /*This one is necessary because we need a width for use to set it center*/
+      font-size: 2em;
+      text-align: center; /*Thsi one center the title*/
+    }
+    .language-container {
+      border: 2px solid gray;
+      border-radius: 100vw;
+    }
+  
+    .language-container .skill-name {
+      display: flex;
+      justify-content: center; /*TO center the names of the skills*/
+      font-size: 13px;
+    }
+  
+    .language-container img {
+      border-radius: 100vw;
+    }
+  }
+  
+  @media (min-width: 768px) {
+  }
+  
+  /* ABOUT REPONSIVE STARTS */
+  @media (min-width: 1024px) {
+    .about-me {
+      flex-direction: row; /*To make the layout in this breakpoint to be row and below this breakpoint will be display column*/
+      align-items: center;
+      justify-content: space-between; /*This one is necessary to make the image to be centered at any break points*/
+      gap: 15em;
+    }
+  
+    .about-content {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .about__text {
+      max-width: 50ch;
+      margin: 0.7rem 0;
+      font-size: 1em;
+    }
+    .about-image {
+      height: 450px;
+      width: 450px;
+      aspect-ratio: 15/8;
+      margin: 3em 0;
+      display: flex;
+      margin: 2rem auto; /*To center the image with different break points*/
+    }
+    .about-image img {
+      height: 100%;
+      width: 100%;
+    }
+    /* GRID IMAGES */
+    .flex-center {
+      display: flex; /*This one centers the whole Technologies*/
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .skills-grid {
+      display: grid;
+      /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 100vw;
+      gap: 2em;
+      margin: 1em auto;
+      place-items: center; /*tHIS ONE CENTER ALL THE GRID IMAGES IN THE CONTAINER THEY ARE IN*/
+    }
+    .items-title h3 {
+      width: 20em; /*This one is necessary because we need a width for use to set it center*/
+      font-size: 2em;
+      text-align: center; /*Thsi one center the title*/
+    }
+    .language-container {
+      border: 2px solid gray;
+      border-radius: 100vw;
+    }
+  
+    .language-container .skill-name {
+      display: flex;
+      justify-content: center; /*TO center the names of the skills*/
+      font-size: 13px;
+    }
+  
+    .language-container img {
+      border-radius: 100vw;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .about__text {
+      max-width: 50ch;
+      margin: 0.7rem 0;
+      font-size: 1.2em;
+    }
+    .about-image {
+      height: 450px;
+      width: 450px;
+      aspect-ratio: 15/8;
+      margin: 3em 0;
+      display: flex;
+      margin: 2rem auto; /*To center the image with different break points*/
+    }
+    .about-image img {
+      height: 100%;
+      width: 100%;
+    }
+    /* GRID IMAGES */
+    .flex-center {
+      display: flex; /*This one centers the whole Technologies*/
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .skills-grid {
+      display: grid;
+      /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 100vw;
+      gap: 2em;
+      margin: 1.2em auto;
+      place-items: center; /*tHIS ONE CENTER ALL THE GRID IMAGES IN THE CONTAINER THEY ARE IN*/
+    }
+    .items-title h3 {
+      width: 20em; /*This one is necessary because we need a width for use to set it center*/
+      font-size: 3em;
+      text-align: center; /*Thsi one center the title*/
+      margin: 0.9em 0;
+    }
+    .language-container {
+      border: 2px solid gray;
+      border-radius: 100vw;
+    }
+  
+    .language-container .skill-name {
+      display: flex;
+      justify-content: center; /*TO center the names of the skills*/
+      font-size: 13px;
+    }
+  
+    .language-container img {
+      border-radius: 100vw;
+    }
+  }
+  /* ABOUT REPONSIVE ENDS */
+  
